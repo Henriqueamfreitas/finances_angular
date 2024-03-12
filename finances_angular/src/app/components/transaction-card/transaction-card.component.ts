@@ -10,11 +10,18 @@ import { TransactionService } from '../../services/transaction.services';
   styleUrl: './transaction-card.component.css'
 })
 export class TransactionCardComponent {
-  constructor(private transactionService: TransactionService) {}
+  constructor(private transactionService: TransactionService) { }
 
   @Input() transaction!: ITransaction
 
-  handleDelete(){
+  valueToMoney() {
+    return (this.transaction.value).toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL"
+    })
+  }
+
+  handleDelete() {
     this.transactionService.removeTransaction(this.transaction.id);
   }
 }
