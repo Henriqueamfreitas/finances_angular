@@ -1,11 +1,11 @@
 <li>
   <div>
-    <p>{{value}}</p>
-    <p>{{description}}</p>
+    <p>{{transaction.value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}}</p>
+    <p>{{transaction.description}}</p>
   </div>
   <div>
-    <p>{{type}}</p>
-    <button>
+    <p>{{transaction.type}}</p>
+    <button (click)="handleDelete()">
       <span class="material-symbols-outlined">
         delete
         </span>

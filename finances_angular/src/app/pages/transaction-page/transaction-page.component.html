@@ -6,5 +6,8 @@
   </a>
   <app-form></app-form>
   <app-total-card></app-total-card>
-  <app-transaction-list></app-transaction-list>
-</main>
+  <ul *ngIf="transactionList.length > 0">
+    <app-transaction-card *ngFor="let transaction of transactionList" [transaction]="transaction"></app-transaction-card>
+  </ul>
+  <p *ngIf="transactionList.length === 0">Cadastre sua primeira transação</p>
+  </main>
