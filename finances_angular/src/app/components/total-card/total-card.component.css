@@ -1,0 +1,10 @@
+.negative {
+  color: var(--color-red);
+}
+div{
+  display: flex;
+  justify-content: space-between;
+}
+span{
+  color: var(--color-blue2);
+}

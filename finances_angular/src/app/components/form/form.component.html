@@ -1,13 +1,26 @@
-<form (submit)="formSubmit($event)">
-  <h2>Cadastre transação</h2>
-  <label for="value">Valor</label>
-  <input type="number" name="value" placeholder="R$" [formControl]="value">
-  <label for="type">Tipo</label>
-  <select name="type" id="type" [formControl]="type">
-    <option value="entrada">Entrada</option>
-    <option value="saida">Saída</option>
-  </select>
-  <label for="description">Tipo</label>
-  <textarea name="description" id="description" [formControl]="description"></textarea>
-  <button>Cadastro</button>
+<form class="container big" (submit)="formSubmit($event)">
+  <a routerLink="/" >
+    <span class="material-symbols-outlined">
+      arrow_back
+    </span>
+  </a>
+  <h2 class="title one">Cadastre transação</h2>
+  <div class="top">
+    <div>
+      <label class="paragraph two" for="value">Valor</label>
+      <input class="paragraph three" type="number" name="value" placeholder="R$" [formControl]="value">
+    </div>
+    <div>
+      <label class="paragraph two" for="type">Tipo</label>
+      <select class="paragraph three" name="type" id="type" [formControl]="type">
+        <option class="paragraph three" value="entrada">Entrada</option>
+        <option class="paragraph three" value="saida">Saída</option>
+      </select>
+    </div>
+  </div>
+  <div class="down">
+    <label class="paragraph two" for="description">Descrição</label>
+    <textarea class="paragraph three" name="description" id="description" [formControl]="description"></textarea>
+  </div>
+  <button class="paragraph one white button medium">Cadastro</button>
 </form>

@@ -1,0 +1,17 @@
+main{
+  background-color: var(--color-blue1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+a{
+  transition: .5s;
+}
+
+a:hover{
+  background-color: var(--color-blue1-hover);
+}

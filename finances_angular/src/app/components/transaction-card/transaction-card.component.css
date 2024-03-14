@@ -1,0 +1,35 @@
+.value{
+  color: var(--color-blue2);
+}
+.negative {
+  color: var(--color-red);
+}
+
+.card{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem;
+}
+
+.right{
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  align-items: center;
+  p{
+    text-transform: capitalize;
+  }
+  button{
+    color: var(--color-blue2);
+  }
+}
+

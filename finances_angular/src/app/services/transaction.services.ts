@@ -5,11 +5,7 @@ import { ITransaction, TTransaction } from "../interfaces/transaction.interfaces
 export class TransactionService {
   readonly transactionList = signal<ITransaction[]>([]);
   readonly totalValue = computed(() => this.transactionList().reduce((accValue, transaction) => {
-    if(transaction.type === "entrada"){
-      return accValue + Number(transaction.value)
-    } else{
-      return accValue - Number(transaction.value)
-    }
+    return accValue + Number(transaction.value)
   }, 0))
 
   getTransactionList(){

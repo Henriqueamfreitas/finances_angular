@@ -1,10 +1,10 @@
-<li>
-  <div>
-    <p>{{valueToMoney()}}</p>
-    <p>{{transaction.description}}</p>
+<li class="card container big">
+  <div class="left">
+    <p class="paragraph one value" [ngClass]="{ 'negative': isNegative() }">{{valueToMoney()}}</p>
+    <p class="paragraph three">{{transaction.description}}</p>
   </div>
-  <div>
-    <p>{{transaction.type}}</p>
+  <div class="right">
+    <p class="paragraph three">{{transaction.type}}</p>
     <button (click)="handleDelete()">
       <span class="material-symbols-outlined">
         delete

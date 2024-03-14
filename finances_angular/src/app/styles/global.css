@@ -1,0 +1,17 @@
+:root{
+  --color-grey0: #000000;
+  --color-grey1: #F5F5F5;
+  --color-blue2: #428DFF;
+  --color-blue1-hover: #8AB5EB ;
+  --color-blue1: #AECFFF;
+  --color-red: #FF8989;
+  --color-white: #FFFFFF;
+
+  --font-primary: "Montserrat", sans-serif;
+  --font-weight-1: 700;
+  --font-weight-2: 400;
+  --font-size-1: 2rem;
+  --font-size-2: 1.75rem;
+  --font-size-2: 1.125rem;
+  --font-size-2: .875rem;
+}

@@ -1,4 +1,4 @@
-<div>
-  <p>Total</p>
-  <span>{{valueToMoney()}}</span>
+<div class="container big">
+  <p class="title two">Total</p>
+  <span class="paragraph one" [ngClass]="{ 'negative': isNegative() }">{{valueToMoney()}}</span>
 </div>

@@ -1,13 +1,11 @@
 <main>
-  <a routerLink="/" >
-    <span class="material-symbols-outlined">
-      arrow_back
-    </span>
-  </a>
-  <app-form></app-form>
-  <app-total-card></app-total-card>
-  <ul *ngIf="transactionList.length > 0">
-    <app-transaction-card *ngFor="let transaction of transactionList" [transaction]="transaction"></app-transaction-card>
-  </ul>
-  <p *ngIf="transactionList.length === 0">Cadastre sua primeira transação</p>
-  </main>
+  <div>
+    <app-form></app-form>
+    <app-total-card></app-total-card>
+    <ul *ngIf="transactionList.length > 0">
+      <app-transaction-card *ngFor="let transaction of transactionList"
+        [transaction]="transaction"></app-transaction-card>
+    </ul>
+    <p class="paragraph one container big" *ngIf="transactionList.length === 0">Cadastre sua primeira transação</p>
+  </div>
+</main>

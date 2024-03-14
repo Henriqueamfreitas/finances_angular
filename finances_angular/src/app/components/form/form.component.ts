@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { TransactionService } from '../../services/transaction.services';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })

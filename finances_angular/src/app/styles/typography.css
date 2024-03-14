@@ -1,0 +1,47 @@
+.title{
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-1);
+}
+
+.title.one{
+  font-size: var(--font-size-1);
+}
+
+.title.two{
+  font-size: var(--font-size-2);
+}
+
+.paragraph{
+  font-family: var(--font-primary);
+}
+
+.paragraph.one{
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-3);
+}
+
+.paragraph.two{
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-4);
+}
+
+.paragraph.three{
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-4);
+}
+
+.paragraph.black, .title.paragraph.black{
+  color: var(--color-white);
+}
+
+.paragraph.white, .title.paragraph.white{
+  color: var(--color-white);
+}
+
+.paragraph.red, .title.paragraph.red{
+  color: var(--color-red);
+}
+
+.paragraph.blue, .title.paragraph.blue{
+  color: var(--color-blue);
+}

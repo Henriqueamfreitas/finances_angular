@@ -1,0 +1,57 @@
+form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+a{
+  position: absolute;
+  left: .5rem;
+  top: .5rem;
+  cursor: pointer;
+}
+
+.top{
+  display: flex;
+  width: 100%;
+  gap: 1.75rem;
+  div{
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    width: 50%;
+    input{
+      padding: 1rem;
+      background-color: var(--color-grey1);
+      border: none;
+    }
+    select{
+      padding: 1rem;
+      background-color: var(--color-grey1);
+      border: none;
+    }
+  }
+}
+
+.down{
+  display: flex;
+  gap: .75rem;
+  flex-direction: column;
+  width: 100%;
+}
+textarea{
+  resize: none;
+  height: 6.8125rem;
+  padding: 1rem;
+  background-color: var(--color-grey1);
+  border: none;
+}
+
+button{
+  transition: .5s;
+}
+button:hover{
+  background-color: var(--color-blue1-hover);
+  transition: .5s;
+}
