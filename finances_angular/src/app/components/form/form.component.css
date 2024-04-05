@@ -55,3 +55,34 @@ button:hover{
   background-color: var(--color-blue1-hover);
   transition: .5s;
 }
+
+
+
+@media (max-width: 650px){
+  form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .top{
+    flex-direction: column;
+    div{
+      width: 100%;
+    }
+  }
+
+  button{
+    transition: .5s;
+    width: 100%;
+  }
+  button:hover{
+    background-color: var(--color-blue1-hover);
+    transition: .5s;
+  }
+}

@@ -14,3 +14,16 @@ a{
 a:hover{
   background-color: var(--color-blue1-hover);
 }
+
+@media (max-width: 650px){
+  main{
+    padding: 0rem .75rem;
+  }
+  h1{
+    text-align: center;
+  }
+
+  a{
+    text-align: center;
+  }
+}

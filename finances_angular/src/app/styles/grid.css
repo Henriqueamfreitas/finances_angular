@@ -17,3 +17,33 @@
   gap: 3rem;
   padding: 6rem 2rem;
 }
+
+
+
+@media (max-width:650px){
+  .container.big{
+    width: 265px;
+    max-width: 265px;
+    padding: 1rem;
+    margin: 0rem;
+  }
+
+  .container.small{
+    width: 75%;
+    padding: 4rem 2rem;
+  }
+}
+
+/* @media (max-width:431px){
+  .container.big{
+    width: 307px;
+    max-width: 307px;
+    padding: 1rem;
+    margin: 0rem;
+  }
+
+  .container.small{
+    width: 75%;
+    padding: 4rem 2rem;
+  }
+} */

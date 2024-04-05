@@ -45,3 +45,29 @@
 .paragraph.blue, .title.paragraph.blue{
   color: var(--color-blue);
 }
+
+
+@media (max-width: 650px){
+  .title.one{
+    font-size: var(--font-size-2);
+  }
+
+  .title.two{
+    font-size: var(--font-size-3);
+  }
+
+  .paragraph.one{
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-4);
+  }
+
+  .paragraph.two{
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-5);
+  }
+
+  .paragraph.three{
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-5);
+  }
+}

@@ -13,3 +13,9 @@
   height: 3.625rem;
   width: 20%;
 }
+
+@media (max-width: 650px){
+  .button.medium{
+    width: 100%;
+  }
+}
